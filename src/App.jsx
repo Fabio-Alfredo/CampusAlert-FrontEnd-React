@@ -1,9 +1,13 @@
 import React from "react"
+import Register from "./pages/Register"
+import Login from "./pages/Login"
 
 function App() {
 
   return (
-    <a className="bg-amber-400">Hello welcome</a>
+    <>
+      <Login />
+    </>
   )
 }
 

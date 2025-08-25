@@ -4,17 +4,18 @@ import Button from "../atoms/Buttom";
 import { Box } from "@mui/material";
 import PasswordInput from "../atoms/PasswordInput";
 
-const RegisterForm = () => {
+
+const LoginForm = () => {
+
   return (
     <Box sx={{ display: "flex", flexDirection: "column", gap: 2, alignItems: "end" }}>
-      <Input label="username" name="username" />
-      <Input label="email" name="email" type="email" />
-      <PasswordInput label="Password" name="password" />
-      <Button type="submit" sx={{ width: "150px", }} >
-        Registrarse
+      <Input label="Identifier" type="text" />
+      <PasswordInput label="password" />
+      <Button type="submit" sx={{ width: "150px", }}>
+        Iniciar Sesion
       </Button>
     </Box>
   )
 }
 
-export default RegisterForm;
+export default LoginForm;
